@@ -1,0 +1,51 @@
+{
+    "cordova-plugin-device": {
+        "source": {
+            "type": "local",
+            "path": "/home/saude/intel/XDK/xdk/components/server/cordova/cordova-plugins/cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "local",
+            "path": "/home/saude/intel/XDK/xdk/components/server/cordova/cordova-plugins/cordova-plugin-splashscreen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "local",
+            "path": "/home/saude/intel/XDK/xdk/components/server/cordova/cordova-plugins/cordova-plugin-statusbar"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-indexedDB": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Microsoft/cordova-plugin-indexedDB.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-websql": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-websql"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-sqlite-storage": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-sqlite-storage@1.2.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

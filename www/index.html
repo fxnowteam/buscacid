@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+    <head>
+
+        <title>BuscaCID</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+
+        <script src='cordova.js'></script>
+
+        <script type="text/javascript" src="inc/js.js"></script>
+
+        <link rel="stylesheet" href="inc/bootstrap-3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="inc/css.css">
+        <link rel="stylesheet" href="inc/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="inc/font-awesome-4.6.3/css/font-awesome.min.css">
+        <script src="inc/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                document.addEventListener("backbutton", backButtonPressed, false);
+            }); 
+        </script>
+
+    </head>
+
+    <body>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><b>BuscaCID</b></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#pesquisar">Pesquisar</a></li>
+                <li><a href="#historico">Hist&oacute;rico</a></li>
+                <li><a href="#top">CIDs mais pesquisados</a></li>
+                <li><a href="#" onclick="backButtonPressed()">Sair</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-sm-12" style="margin-top: 60px;">
+                    <div id="pesquisar">
+                        <div class="form-group has-feedback">
+                            <input type="search" id="termo" class="form-control" placeholder="Digite aqui o que procura..." onsearch="buscar()" />
+                            <i class="fa fa-search form-control-feedback"></i>
+                            <button onclick="add()">add</button>
+                            <div id="resultados"></div>
+                        </div>
+                    </div>
+
+                    <div id="historico" style="display: none">
+
+                    </div>
+
+                    <div id="top" style="display: none">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
